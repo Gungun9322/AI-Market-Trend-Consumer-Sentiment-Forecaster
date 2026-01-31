@@ -1,20 +1,29 @@
+Step 1: Data Cleaning (cleaning.py)
+Raw review data is cleaned to improve data quality by removing duplicates, handling missing values, and standardizing data formats for accurate analysis.
 
-step 1: cleaning.py : we cleaned our data for better data analysis 
+Step 2: Data Merging
+Cleaned datasets from Amazon and Flipkart are merged into a single dataset to enable unified and cross-platform consumer analysis.
 
-step 2: merge data : we merged data of amazon and flipkart
+Step 3: Data Reduction
+After merging, the dataset becomes very large. To improve performance and efficiency, unnecessary columns and records are removed while preserving important information.
 
-step 3: reduce data : so we have a lot data after merge data so that we have reduced our data 
+Step 4: Category Definition (category.py)
+Products are classified into predefined categories, which helps in analyzing category-wise demand, trends, and sentiment patterns.
 
-step 4: category.py : we have defined all the category of our data 
+Step 5: Sentiment Analysis (sentiment.py)
+Sentiment analysis is applied to classify customer reviews as Positive, Negative, or Neutral. Randomized dates are also assigned to support time-based trend analysis.
 
-step 5: sentiment.py : giving sentiment to the data and also the random dates 
+Step 6: Topic Modeling
+Topic modeling techniques are used to extract key themes and discussion topics from customer reviews, helping identify common issues, preferences, and emerging trends.
 
-step 6: topic modeling: we applied topic modling into our data
+Step 7: External Data Collection (APIs)
+Additional data is collected to enrich insights:
 
+news_api.py collects news articles related to products and market trends and analyzes their sentiment.
 
+reddit.py extracts Reddit discussions to capture real-world consumer opinions and trending topics.
 
-api files 
+rapid.py fetches supplementary real-time data using RapidAPI services.
 
-1. news_api.py
-2. reddit.py 
-3. rapid.py
+Step 8: Dashboard Generation
+All processed data is integrated into an interactive dashboard to visualize market trends, consumer sentiment, category performance, and cross-platform insights.
